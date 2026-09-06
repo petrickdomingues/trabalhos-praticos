@@ -28,8 +28,8 @@ utilizando os seus dígitos, simulando a multiplicação tradicional.
 
 ## Arquivos
 
-- `aula/` — código desenvolvido durante a aula.
-- `casa/` — código desenvolvido em casa seguindo o estilo de código solicitado
+- `leetcode43Aula.c/` — código desenvolvido durante a aula.
+- `trabalho1Casa.c/` — código desenvolvido em casa seguindo o estilo de código solicitado
 
 ---
 
