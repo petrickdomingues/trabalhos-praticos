@@ -2,30 +2,34 @@
 
 ## Informações
 
-**Aluno:** Pétrick Domingues;
-
-**Disciplina:** AED;
-
-**Professor:** RAFAEL PICCIN TORCHELSEN;
-
-**Trabalho:** Trabalho Prático 01;
+**Aluno:** Petrick Domingues  
+**Disciplina:** Algoritmos e Estruturas de Dados (AED)  
+**Professor:** RAFAEL PICCIN TORCHELSEN 
+**Trabalho:** Trabalho Prático 01
 
 ---
 
 ## Problema
 
-[Explique aqui o problema que o programa deve resolver.]
+### LeetCode #43 - Multiply Strings
+
+O problema consiste em multiplicar dois números inteiros não negativos
+representados como strings e retornar o resultado também como uma string.
+
+O problema não permite utilizar uma biblioteca de números grandes nem
+converter diretamente as strings para tipos inteiros.
 
 ### Objetivo
 
-[Explique resumidamente o que o programa deve fazer.]
+Implementar uma função capaz de realizar a multiplicação dos dois números
+utilizando os seus dígitos, simulando a multiplicação tradicional.
 
 ---
 
 ## Arquivos
 
-* `aula/` — código desenvolvido durante a aula.
-* `casa/` — código desenvolvido em casa seguindo o estilo de código do Doom 3.
+- `aula/` — código desenvolvido durante a aula.
+- `casa/` — código desenvolvido em casa seguindo o estilo de código solicitado
 
 ---
 
@@ -35,108 +39,18 @@
 
 **Entrada:**
 
-```text
-[entrada utilizada]
-```
+num1 = "2"
+num2 = "3"
 
-**Saída esperada:**
+**saida:**
+   "6"
 
-```text
-[saída esperada]
-```
-
-**Resultado:** Funcionou corretamente.
-
-### Caso 2
+### caso 2
 
 **Entrada:**
 
-```text
-[entrada utilizada]
-```
+num1 = "123"
+num2 = "456"
 
-**Saída esperada:**
-
-```text
-[saída esperada]
-```
-
-**Resultado:** Funcionou corretamente.
-
-### Caso 3
-
-**Entrada:**
-
-```text
-[entrada utilizada]
-```
-
-**Saída esperada:**
-
-```text
-[saída esperada]
-```
-
-**Resultado:** Funcionou corretamente.
-
----
-
-## O que funciona
-
-* [Descreva o que está funcionando.]
-* [Outra funcionalidade funcionando.]
-* [Outra funcionalidade.]
-
-## O que não funciona
-
-* [Descreva alguma limitação ou problema, caso exista.]
-
-Caso esteja tudo funcionando:
-
-> Não foram identificados problemas nas funcionalidades testadas.
-
----
-
-## Complexidade
-
-**Complexidade de tempo:** O([complexidade])
-
-**Complexidade de espaço:** O([complexidade])
-
-[Explique brevemente por que o algoritmo possui essa complexidade.]
-
----
-
-## LeetCode
-
-Caso este exercício seja do LeetCode:
-
-**Problema:** [Nome/número do problema]
-
-**Resultado do Submit:** Accepted
-
-[Coloque aqui uma captura de tela do resultado do Submit, se necessário.]
-
-### Editorial
-
-[Explique brevemente quais soluções foram apresentadas no editorial e compare com a solução utilizada neste trabalho.]
-
----
-
-## Ajuda utilizada
-
-[Se utilizou ajuda, explique aqui.]
-
-Exemplo:
-
-> Durante o desenvolvimento, tive dificuldade na implementação de [parte do código]. Utilizei ajuda para entender [explicação]. Depois disso, implementei e testei a solução.
-
-Caso não tenha utilizado:
-
-> O código foi desenvolvido sem auxílio externo.
-
----
-
-## Observações
-
-[Outras informações importantes sobre o trabalho.]
+**saida:**
+ "56088"
