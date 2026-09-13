@@ -1,56 +1,143 @@
-# Trabalho Prático 01
+# Trabalho Prático 01 - Maximum Subarray
 
 ## Informações
 
-**Aluno:** Petrick Domingues  
-**Disciplina:** Algoritmos e Estruturas de Dados (AED)  
-**Professor:** RAFAEL PICCIN TORCHELSEN 
+**Aluno:** Petrick Domingues
+**Disciplina:** Algoritmos e Estruturas de Dados (AED)
+**Professor:** RAFAEL PICCIN TORCHELSEN
 **Trabalho:** Trabalho Prático 01
 
 ---
 
 ## Problema
 
-### LeetCode #43 - Multiply Strings
+### LeetCode #53 - Maximum Subarray
 
-O problema consiste em multiplicar dois números inteiros não negativos
-representados como strings e retornar o resultado também como uma string.
+O problema consiste em receber um vetor de números inteiros e encontrar a
+subsequência contígua que possui a maior soma possível.
 
-O problema não permite utilizar uma biblioteca de números grandes nem
-converter diretamente as strings para tipos inteiros.
+A função deve retornar somente o valor da maior soma encontrada.
 
-### Objetivo
+Por exemplo:
 
-Implementar uma função capaz de realizar a multiplicação dos dois números
-utilizando os seus dígitos, simulando a multiplicação tradicional.
+```text
+Entrada:
+[-2,1,-3,4,-1,2,1,-5,4]
+
+Saída:
+6
+```
+
+A subsequência com maior soma é:
+
+```text
+[4,-1,2,1]
+```
+
+Sua soma é:
+
+```text
+4 + (-1) + 2 + 1 = 6
+```
 
 ---
 
-## Arquivos
+## Objetivo
 
-- `leetcode43Aula.c/` — código desenvolvido durante a aula.
-- `trabalho1Casa.c/` — código desenvolvido em casa seguindo o estilo de código solicitado
+Implementar uma função capaz de encontrar a maior soma possível de uma
+subsequência contígua do vetor.
+
+A solução utilizada percorre o vetor uma única vez, mantendo a melhor soma
+da sequência atual e a maior soma encontrada durante a execução.
+
+---
+
+## Funcionamento da solução
+
+A solução utiliza duas variáveis principais:
+
+* `somaAtual` — armazena a melhor soma de uma sequência que termina na
+  posição atual.
+* `melhorSoma` — armazena a maior soma encontrada até o momento.
+
+Para cada elemento do vetor, é verificado se é melhor continuar a sequência
+atual ou começar uma nova sequência a partir daquele elemento.
+
+Se começar uma nova sequência for melhor, `somaAtual` recebe o elemento atual.
+
+Caso contrário, o elemento atual é somado à sequência existente.
+
+Depois disso, se `somaAtual` for maior que `melhorSoma`, o valor de
+`melhorSoma` é atualizado.
+
+Ao final, `melhorSoma` é retornada.
 
 ---
 
 ## Testes realizados
 
+Os três casos abaixo correspondem aos exemplos apresentados no enunciado
+do problema no LeetCode.
+
 ### Caso 1
 
 **Entrada:**
 
-num1 = "2"
-num2 = "3"
+```text
+nums = [-2,1,-3,4,-1,2,1,-5,4]
+```
 
-**saida:**
-   "6"
+**Saída esperada:**
 
-### caso 2
+```text
+6
+```
+
+**Resultado:** Funcionou corretamente.
+
+---
+
+### Caso 2
 
 **Entrada:**
 
-num1 = "123"
-num2 = "456"
+```text
+nums = [1]
+```
 
-**saida:**
- "56088"
+**Saída esperada:**
+
+```text
+1
+```
+
+**Resultado:** Funcionou corretamente.
+
+---
+
+### Caso 3
+
+**Entrada:**
+
+```text
+nums = [5,4,-1,7,8]
+```
+
+**Saída esperada:**
+
+```text
+23
+```
+
+**Resultado:** Funcionou corretamente.
+
+---
+
+## Dificuldades encontradas
+
+A dificuldade foi entender o conceito de subsequência contígua
+e perceber quando é melhor continuar somando os elementos ou iniciar uma
+nova sequência.
+
+Também entender a diferença entre a soma atual e a maior
+soma encontrada durante o percurso do vetor.
