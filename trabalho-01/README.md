@@ -3,8 +3,11 @@
 ## Informações
 
 **Aluno:** Petrick Domingues
+
 **Disciplina:** Algoritmos e Estruturas de Dados (AED)
+
 **Professor:** RAFAEL PICCIN TORCHELSEN
+
 **Trabalho:** Trabalho Prático 01
 
 ---
